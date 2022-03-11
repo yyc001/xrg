@@ -52,6 +52,5 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name BDF_FILE COUNTER8.bdf
 set_global_assignment -name BDF_FILE "SELECT2-2.bdf"
 set_global_assignment -name BDF_FILE "SELECT2-8.bdf"
-set_global_assignment -name BDF_FILE "REG8-TRI-Bus.bdf"
 set_global_assignment -name BDF_FILE "REG8-TRI-B.bdf"
 set_global_assignment -name BDF_FILE "SELECT2-8-B.bdf"
