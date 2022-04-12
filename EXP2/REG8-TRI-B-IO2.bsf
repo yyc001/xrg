@@ -1,0 +1,79 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2021  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 56 56 232 200)
+	(text "REG8-TRI-B-IO2" (rect 16 1 130 21)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 16 113 39 132)(font "Intel Clear" ))
+	(port
+		(pt 0 40)
+		(input)
+		(text "READ_A" (rect 0 8 55 28)(font "Intel Clear" (font_size 8)))
+		(text "READ_A" (rect 24 32 79 52)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 176 40)
+		(input)
+		(text "READ_B" (rect 16 8 71 28)(font "Intel Clear" (font_size 8)))
+		(text "READ_B" (rect 96 32 151 52)(font "Intel Clear" (font_size 8)))
+		(line (pt 160 40)(pt 176 40))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "WRITE_A" (rect 0 8 63 28)(font "Intel Clear" (font_size 8)))
+		(text "WRITE_A" (rect 24 48 87 68)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 176 56)
+		(input)
+		(text "WRITE_B" (rect 16 8 79 28)(font "Intel Clear" (font_size 8)))
+		(text "WRITE_B" (rect 88 48 151 68)(font "Intel Clear" (font_size 8)))
+		(line (pt 160 56)(pt 176 56))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "CLK" (rect 0 8 27 28)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 24 96 51 116)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 104)(pt 16 104))
+	)
+	(port
+		(pt 176 72)
+		(bidir)
+		(text "B[7..0]" (rect 16 8 60 28)(font "Intel Clear" (font_size 8)))
+		(text "B[7..0]" (rect 112 64 156 84)(font "Intel Clear" (font_size 8)))
+		(line (pt 176 72)(pt 160 72)(line_width 3))
+	)
+	(port
+		(pt 0 72)
+		(bidir)
+		(text "A[7..0]" (rect 0 8 44 28)(font "Intel Clear" (font_size 8)))
+		(text "A[7..0]" (rect 24 64 68 84)(font "Intel Clear" (font_size 8)))
+		(line (pt 16 72)(pt 0 72)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 24 160 128))
+	)
+)
