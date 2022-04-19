@@ -217,19 +217,19 @@ applicable agreement for further details.
 	(pt 400 264)
 )
 (connector
-	(text "L2[7..0]" (rect 575 216 612 228)(font "Arial" ))
-	(pt 648 232)
-	(pt 560 232)
-	(bus)
-)
-(connector
-	(text "L1[7..0]" (rect 578 72 615 84)(font "Arial" ))
+	(text "RDBN[7..0]" (rect 578 72 635 84)(font "Arial" ))
 	(pt 648 88)
 	(pt 560 88)
 	(bus)
 )
 (connector
-	(text "L1[7..0],L2[7..0]" (rect 718 144 797 156)(font "Arial" ))
+	(text "RDBN[15..8]" (rect 575 216 638 228)(font "Arial" ))
+	(pt 648 232)
+	(pt 560 232)
+	(bus)
+)
+(connector
+	(text "RDBN[15..0]" (rect 718 144 781 156)(font "Arial" ))
 	(pt 648 160)
 	(pt 776 160)
 	(bus)

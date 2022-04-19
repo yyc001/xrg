@@ -4,90 +4,89 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2021  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 224 176)
-	(text "CU" (rect 5 0 25 20)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 137 31 156)(font "Intel Clear" ))
+	(rect 16 16 192 176)
+	(text "CU" (rect 5 0 21 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "iAddr[7..0]" (rect 0 0 73 20)(font "Intel Clear" (font_size 8)))
-		(text "iAddr[7..0]" (rect 21 27 94 47)(font "Intel Clear" (font_size 8)))
+		(text "iAddr[7..0]" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "iAddr[7..0]" (rect 21 27 80 41)(font "Arial" (font_size 8)))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "immE" (rect 0 0 37 20)(font "Intel Clear" (font_size 8)))
-		(text "immE" (rect 21 43 58 63)(font "Intel Clear" (font_size 8)))
+		(text "immE" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "immE" (rect 21 43 49 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "CLK" (rect 0 0 27 20)(font "Intel Clear" (font_size 8)))
-		(text "CLK" (rect 21 59 48 79)(font "Intel Clear" (font_size 8)))
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 59 44 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port
-		(pt 208 32)
+		(pt 176 32)
 		(output)
-		(text "READ[3..0]" (rect 0 0 73 20)(font "Intel Clear" (font_size 8)))
-		(text "READ[3..0]" (rect 114 27 187 47)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
+		(text "READ[3..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "READ[3..0]" (rect 94 27 155 41)(font "Arial" (font_size 8)))
+		(line (pt 176 32)(pt 160 32)(line_width 3))
 	)
 	(port
-		(pt 208 48)
+		(pt 176 48)
 		(output)
-		(text "WRITE[3..0]" (rect 0 0 81 20)(font "Intel Clear" (font_size 8)))
-		(text "WRITE[3..0]" (rect 106 43 187 63)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 48)(pt 192 48)(line_width 3))
+		(text "WRITE[3..0]" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "WRITE[3..0]" (rect 91 43 155 57)(font "Arial" (font_size 8)))
+		(line (pt 176 48)(pt 160 48)(line_width 3))
 	)
 	(port
-		(pt 208 64)
+		(pt 176 64)
 		(output)
-		(text "ALU[5..0]" (rect 0 0 63 20)(font "Intel Clear" (font_size 8)))
-		(text "ALU[5..0]" (rect 124 59 187 79)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 64)(pt 192 64)(line_width 3))
+		(text "ALU[5..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "ALU[5..0]" (rect 102 59 155 73)(font "Arial" (font_size 8)))
+		(line (pt 176 64)(pt 160 64)(line_width 3))
 	)
 	(port
-		(pt 208 80)
+		(pt 176 80)
 		(output)
-		(text "SH[1..0]" (rect 0 0 55 20)(font "Intel Clear" (font_size 8)))
-		(text "SH[1..0]" (rect 132 75 187 95)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 80)(pt 192 80)(line_width 3))
+		(text "SH[1..0]" (rect 0 0 44 14)(font "Arial" (font_size 8)))
+		(text "SH[1..0]" (rect 111 75 155 89)(font "Arial" (font_size 8)))
+		(line (pt 176 80)(pt 160 80)(line_width 3))
 	)
 	(port
-		(pt 208 96)
+		(pt 176 96)
 		(output)
-		(text "CMP[1..0]" (rect 0 0 67 20)(font "Intel Clear" (font_size 8)))
-		(text "CMP[1..0]" (rect 120 91 187 111)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 96)(pt 192 96)(line_width 3))
+		(text "CMP[1..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "CMP[1..0]" (rect 102 91 155 105)(font "Arial" (font_size 8)))
+		(line (pt 176 96)(pt 160 96)(line_width 3))
 	)
 	(port
-		(pt 208 112)
+		(pt 176 112)
 		(output)
-		(text "SE[1..0]" (rect 0 0 53 20)(font "Intel Clear" (font_size 8)))
-		(text "SE[1..0]" (rect 134 107 187 127)(font "Intel Clear" (font_size 8)))
-		(line (pt 208 112)(pt 192 112)(line_width 3))
+		(text "SE[1..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "SE[1..0]" (rect 112 107 155 121)(font "Arial" (font_size 8)))
+		(line (pt 176 112)(pt 160 112)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 192 144))
+		(rectangle (rect 16 16 160 144))
 	)
 )
