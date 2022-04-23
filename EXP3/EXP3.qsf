@@ -90,6 +90,6 @@ set_global_assignment -name QIP_FILE RAM0.qip
 set_global_assignment -name BDF_FILE "SELECT2-16-B.bdf"
 set_global_assignment -name BDF_FILE CU.bdf
 set_global_assignment -name BDF_FILE "OR16-B.bdf"
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name QIP_FILE multi.qip
 set_global_assignment -name QIP_FILE div.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
