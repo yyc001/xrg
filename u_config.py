@@ -413,7 +413,7 @@ U_CODES = {
     "read": REG_CODES,
     "write": REG_CODES,
     "blank": {
-        "none": "00000"
+        "none": "0000"
     },
     "G": {
         "none": "0",
