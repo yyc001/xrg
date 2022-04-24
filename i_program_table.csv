@@ -1,5 +1,5 @@
 op,opcode,r1,r2,r3,
-取指,'0000000,xxx,xxx,xxx,
+ȡָ,'0000000,xxx,xxx,xxx,
 SLLV,'0001000,r1,r2,r3,
 SLLVD,'0001011,r1,xxx,xxx,
 SRLV,'0001100,r1,r2,r3,
