@@ -1,23 +1,10 @@
-INS_CODE = {
-    "SLLV": "0AAABBBCCC001010",
-    "SRLV": "0AAABBBCCC001101",
-    "SLTU": "0AAABBBCCC010000",
-    "ADDU": "1AAABBBCCC010011",
-    "SUBU": "1AAABBBCCC010110",
-    "AND":  "1AAABBBCCC011001",
-    "OR":   "1AAABBBCCC011100",
-    "XOR":  "1AAABBBCCC001111",
-    "NXOR": "1AAABBBCCC100010",
-    "JZ":   "0100AAABBB100101",
-    "LD":   "0AAA100BBB101001",
-    "STR":  "0100AAABBB101100",
-    "HALT": "1111111111111111",
-}
-
 REG_FL = {
     "AX": "000",
     "BX": "001",
     "CX": "010",
     "DX": "011",
+    "spa": "100",
+    "spb": "101",
+    "spc": "110",
     "imm": "111"
 }

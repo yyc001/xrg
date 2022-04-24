@@ -21,9 +21,9 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 184 176)
+	(rect 16 16 184 144)
 	(text "DECODER" (rect 5 0 64 19)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 139 24 156)(font "Intel Clear" ))
+	(text "inst" (rect 8 107 24 124)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -66,14 +66,7 @@ https://fpgasoftware.intel.com/eula.
 		(text "immE" (rect 113 91 147 110)(font "Intel Clear" (font_size 8)))
 		(line (pt 168 96)(pt 152 96))
 	)
-	(port
-		(pt 168 112)
-		(output)
-		(text "halt" (rect 0 0 22 19)(font "Intel Clear" (font_size 8)))
-		(text "halt" (rect 125 107 147 126)(font "Intel Clear" (font_size 8)))
-		(line (pt 168 112)(pt 152 112))
-	)
 	(drawing
-		(rectangle (rect 16 16 152 144))
+		(rectangle (rect 16 16 152 112))
 	)
 )
