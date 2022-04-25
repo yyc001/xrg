@@ -1,4 +1,3 @@
-
 CM_CAPACITY_BITS = 7
 CM_CAPACITY = 2 ** CM_CAPACITY_BITS
 
@@ -59,10 +58,11 @@ U_INS_ACTIONS = [
             }
         ]
     }, {
-        "name": "SLLVD",
+        "name": "SLLV.i",
         "operand": 1,
         "actions": [
             {
+                "read": "alu_l",
                 "write": "r1",
                 "alu_op": "sh_left",
                 "alu_ena": "sh",
@@ -87,11 +87,12 @@ U_INS_ACTIONS = [
                 "jmp": "0"
             }
         ]
-    },  {
-        "name": "SRLVD",
+    }, {
+        "name": "SRLV.i",
         "operand": 1,
         "actions": [
             {
+                "read": "alu_l",
                 "write": "r1",
                 "alu_op": "sh_right",
                 "alu_ena": "sh",
@@ -109,6 +110,18 @@ U_INS_ACTIONS = [
                 "read": "r2",
                 "write": "spa"
             }, {
+                "read": "alu_l",
+                "write": "r1",
+                "alu_op": "a<b",
+                "alu_ena": "cmp",
+                "jmp": "0"
+            }
+        ]
+    }, {
+        "name": "SLTU.i",
+        "operand": 1,
+        "actions": [
+            {
                 "read": "alu_l",
                 "write": "r1",
                 "alu_op": "a<b",
@@ -135,6 +148,18 @@ U_INS_ACTIONS = [
             }
         ]
     }, {
+        "name": "ADDU.i",
+        "operand": 1,
+        "actions": [
+            {
+                "read": "alu_l",
+                "write": "r1",
+                "alu_op": "a+b",
+                "alu_ena": "add",
+                "jmp": "0"
+            }
+        ]
+    }, {
         "name": "SUBU",
         "operand": 3,
         "actions": [
@@ -145,6 +170,18 @@ U_INS_ACTIONS = [
                 "read": "r2",
                 "write": "spa"
             }, {
+                "read": "alu_l",
+                "write": "r1",
+                "alu_op": "a-b",
+                "alu_ena": "add",
+                "jmp": "0"
+            }
+        ]
+    }, {
+        "name": "SUBU.i",
+        "operand": 1,
+        "actions": [
+            {
                 "read": "alu_l",
                 "write": "r1",
                 "alu_op": "a-b",
@@ -171,6 +208,18 @@ U_INS_ACTIONS = [
             }
         ]
     }, {
+        "name": "AND.i",
+        "operand": 1,
+        "actions": [
+            {
+                "read": "alu_l",
+                "write": "r1",
+                "alu_op": "a&b",
+                "alu_ena": "add",
+                "jmp": "0"
+            }
+        ]
+    }, {
         "name": "OR",
         "operand": 3,
         "actions": [
@@ -181,6 +230,18 @@ U_INS_ACTIONS = [
                 "read": "r2",
                 "write": "spa"
             }, {
+                "read": "alu_l",
+                "write": "r1",
+                "alu_op": "a|b",
+                "alu_ena": "add",
+                "jmp": "0"
+            }
+        ]
+    }, {
+        "name": "OR.i",
+        "operand": 1,
+        "actions": [
+            {
                 "read": "alu_l",
                 "write": "r1",
                 "alu_op": "a|b",
@@ -207,6 +268,18 @@ U_INS_ACTIONS = [
             }
         ]
     }, {
+        "name": "XOR.i",
+        "operand": 1,
+        "actions": [
+            {
+                "read": "alu_l",
+                "write": "r1",
+                "alu_op": "a^b",
+                "alu_ena": "add",
+                "jmp": "0"
+            }
+        ]
+    }, {
         "name": "NXOR",
         "operand": 3,
         "actions": [
@@ -217,6 +290,18 @@ U_INS_ACTIONS = [
                 "read": "r2",
                 "write": "spa"
             }, {
+                "read": "alu_l",
+                "write": "r1",
+                "alu_op": "a nxor b",
+                "alu_ena": "add",
+                "jmp": "0"
+            }
+        ]
+    }, {
+        "name": "NXOR.i",
+        "operand": 1,
+        "actions": [
+            {
                 "read": "alu_l",
                 "write": "r1",
                 "alu_op": "a nxor b",
@@ -242,6 +327,60 @@ U_INS_ACTIONS = [
                 "write": "pc",
                 "alu_op": "=0",
                 "alu_ena": "se",
+                "jmp": "0"
+            }
+        ]
+    }, {
+        "name": "JZR",
+        "operand": 2,
+        "actions": [
+            {
+                "read": "r1",
+                "write": "spc"
+            }, {
+                "read": "pc",
+                "write": "spa"
+            }, {
+                "read": "r2",
+                "write": "spb"
+            }, {
+                "read": "alu_l",
+                "write": "spb",
+                "alu_op": "a+b",
+                "alu_ena": "add",
+            }, {
+                "read": "alu_l",
+                "write": "pc",
+                "alu_op": "=0",
+                "alu_ena": "se",
+                "jmp": "0"
+            }
+        ]
+    }, {
+        "name": "JMP",
+        "operand": 1,
+        "actions": [
+            {
+                "read": "r1",
+                "write": "pc",
+                "jmp": "0"
+            }
+        ]
+    }, {
+        "name": "JMPR",
+        "operand": 1,
+        "actions": [
+            {
+                "read": "pc",
+                "write": "spa"
+            }, {
+                "read": "r1",
+                "write": "spb"
+            }, {
+                "read": "alu_l",
+                "write": "pc",
+                "alu_op": "a+b",
+                "alu_ena": "add",
                 "jmp": "0"
             }
         ]
@@ -286,9 +425,14 @@ U_INS_ACTIONS = [
                 "read": "r2",
                 "write": "spa"
             }, {
+                "read": "alu_h",
+                "write": "spc",
+                "alu_op": "a*b",
+                "alu_ena": "mul",
+            }, {
                 "read": "alu_l",
                 "write": "r1",
-                "alu_op": "a*b_l",
+                "alu_op": "a*b",
                 "alu_ena": "mul",
                 "jmp": "0"
             }
@@ -304,6 +448,12 @@ U_INS_ACTIONS = [
                 "read": "r2",
                 "write": "spa"
             }, {
+                "read": "alu_h",
+                "write": "spc",
+                "alu_op": "a/b",
+                "alu_ena": "div",
+                "jmp": "0"
+            }, {
                 "read": "alu_l",
                 "write": "r1",
                 "alu_op": "a/b",
@@ -317,7 +467,8 @@ U_INS_ACTIONS = [
         "actions": [
             {
                 "read": "r1",
-                "write": "r2"
+                "write": "r2",
+                "jmp": "0"
             }
         ]
     }, {
@@ -334,17 +485,18 @@ U_INS_ACTIONS = [
         "actions": [
             {
                 # WAIT
+                "jmp": "0"
             }
         ]
     }
 ]
 
 U_BUS_CODES = [
-    "jmp", # 22-23
+    "jmp",  # 22-23
     "blank",  # 18---21
-    "G", # 17
-    "alu_ena", # 14-16
-    "alu_op", # 8----13
+    "G",  # 17
+    "alu_ena",  # 14-16
+    "alu_op",  # 8----13
     "write",  # 4--7
     "read",  # 0--3
 ]
@@ -398,11 +550,11 @@ U_CODES = {
         # se
         "=0": "000001",
         # mul
-        "a*b_h": "000010",
-        "a*b_l": "000001",
+        "a*b": "000010",  # 未用
+        # "a*b_l": "000001",
         # div
-        "a/b": "000010",
-        "a mod b": "000001",
+        "a/b": "000010",  # 未用
+        # "a mod b": "000001",
     },
     "jmp": {
         "none": "00",

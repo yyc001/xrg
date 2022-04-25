@@ -7,7 +7,7 @@ symbols = {}
 instructions = []
 
 
-with open("source.s") as f:
+with open("source.s", encoding="utf-8") as f:
     line_id = 0
     bin_ad = 0
     for line in f.readlines():

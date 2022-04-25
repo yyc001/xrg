@@ -1,5 +1,7 @@
 from u_config import U_INS_ACTIONS, U_BUS_CODES, U_CODES
-from u_compile import OP_CODES, INS_OP_NUMS
+from u_compile import OP_CODES
+from i_compile import INS_OP_NUMS
+
 with open("u_program.csv", "w") as f:
     f.write("指令,")
     for s in U_BUS_CODES:
@@ -17,13 +19,13 @@ print("Generate u_program Completed.")
 
 with open("i_program_table.csv", "w") as f:
     f.write("op,opcode,r1,r2,r3,\n")
-    for op,opcode in OP_CODES.items():
+    for op, opcode in OP_CODES.items():
         f.write(op + ",'" + "{:07b}".format(opcode) + ",")
         for i in range(3):
             if i >= INS_OP_NUMS[op]:
                 f.write("xxx,")
             else:
-                f.write("r" + str(i+1) + ",")
+                f.write("r" + str(i + 1) + ",")
         f.write("\n")
 
 print("Generate i_program_table Completed.")
