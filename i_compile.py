@@ -7,7 +7,15 @@ symbols = {}
 instructions = []
 
 
-with open("source.s", encoding="utf-8") as f:
+def isNum(s):
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False
+
+
+with open("test.s", encoding="utf-8") as f:
     line_id = 0
     bin_ad = 0
     for line in f.readlines():
@@ -25,7 +33,7 @@ with open("source.s", encoding="utf-8") as f:
             if token[0] == ".":
                 symbols[token] = bin_ad
                 continue
-            elif token.isdigit():
+            elif isNum(token):
                 instructions.append({
                     'type': "raw",
                     'line': line_id,
@@ -36,7 +44,7 @@ with open("source.s", encoding="utf-8") as f:
                 continue
         imme = 0
         for token in tokens:
-            if token[0] == '.' or token.isdigit():
+            if token[0] == '.' or isNum(token):
                 if imme:
                     print("ERROR on line {}: Cannot give more than 1 immediate.".format(line_id), file=sys.stderr)
                     exit(1)
@@ -50,8 +58,7 @@ with open("source.s", encoding="utf-8") as f:
         })
         bin_ad += 1 + imme
 
-
-with open("ram.mif","w") as f:
+with open("ram.mif", "w") as f:
     f.write("""WIDTH=16;
 DEPTH=256;
 
@@ -72,12 +79,12 @@ CONTENT BEGIN
             opand = INS_OP_NUMS[opname]
             tmp += "{:07b}".format(opcode)
             for i in range(1, 4):
-                if i>opand:
+                if i > opand:
                     tmp += "000"
                     continue
                 token = instruction['tokens'][i]
-                if token.isdigit():
-                    imm = int(token)
+                if isNum(token):
+                    imm = (int(token) + 2**16) % 2**16
                     tmp += "111"
                 elif token[0] == '.':
                     imm = symbols[token]
@@ -86,8 +93,7 @@ CONTENT BEGIN
                     tmp += REG_FL[token]
             f.write("    {} :  {};\n".format(instruction['bin'], tmp))
             if imm:
-                f.write("    {} :  {:016b};\n".format(instruction['bin']+1, imm))
-
+                f.write("    {} :  {:016b};\n".format(instruction['bin'] + 1, imm))
 
     f.write("END;")
 

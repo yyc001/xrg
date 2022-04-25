@@ -44,10 +44,10 @@ U_INS_ACTIONS = [
         "operand": 3,
         "actions": [
             {
-                "read": "r3",
+                "read": "r2",
                 "write": "spa"
             }, {
-                "read": "r2",
+                "read": "r3",
                 "write": "spb"
             }, {
                 "read": "alu_l",
@@ -74,10 +74,10 @@ U_INS_ACTIONS = [
         "operand": 3,
         "actions": [
             {
-                "read": "r3",
+                "read": "r2",
                 "write": "spa"
             }, {
-                "read": "r2",
+                "read": "r3",
                 "write": "spb"
             }, {
                 "read": "alu_l",
@@ -130,7 +130,7 @@ U_INS_ACTIONS = [
             }
         ]
     }, {
-        "name": "ADDU",
+        "name": "ADD",
         "operand": 3,
         "actions": [
             {
@@ -148,7 +148,7 @@ U_INS_ACTIONS = [
             }
         ]
     }, {
-        "name": "ADDU.i",
+        "name": "ADD.i",
         "operand": 1,
         "actions": [
             {
@@ -160,7 +160,7 @@ U_INS_ACTIONS = [
             }
         ]
     }, {
-        "name": "SUBU",
+        "name": "SUB",
         "operand": 3,
         "actions": [
             {
@@ -178,7 +178,7 @@ U_INS_ACTIONS = [
             }
         ]
     }, {
-        "name": "SUBU.i",
+        "name": "SUB.i",
         "operand": 1,
         "actions": [
             {

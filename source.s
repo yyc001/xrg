@@ -6,12 +6,12 @@
 
   MOV AX, .ad1
   LD  BX, AX
-  ADDU BX, BX, AX
+  ADD BX, BX, AX
   MOV CX, 0
 .loop
-  ADDU AX, AX, 1
+  ADD AX, AX, 1
   LD  DX, AX
-  ADDU CX, CX, DX
+  ADD CX, CX, DX
   NXOR DX, AX, BX
   JZ  DX, .loop
   STR .ad2, CX

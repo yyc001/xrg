@@ -14,7 +14,7 @@ for instruction in U_INS_ACTIONS:
     INS_OP_NUMS[instruction['name']] = instruction['operand']
     for action in instruction["actions"]:
         if output_arr[naddr] != 0:
-            print("Conflict address: {}".format(naddr),file=sys.stderr)
+            print("Conflict address: {}".format(naddr), file=sys.stderr)
             exit(1)
         tmp = ""
         for item in U_BUS_CODES:
@@ -31,7 +31,7 @@ for instruction in U_INS_ACTIONS:
         output_arr[naddr] = tmp
         naddr += 1
 
-with open("cm.mif","w") as f:
+with open("cm.mif", "w") as f:
     f.write("""WIDTH=24;
 DEPTH=256;
 
@@ -41,7 +41,7 @@ DATA_RADIX=BIN;
 CONTENT BEGIN
 """)
     for idx in range(len(output_arr)):
-        f.write("    {}   :   {};\n".format(idx,output_arr[idx]))
+        f.write("    {}   :   {};\n".format(idx, output_arr[idx]))
     f.write("END;")
 
 print("Compile CM completed.")
