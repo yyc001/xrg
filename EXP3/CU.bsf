@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 216 144)
+	(rect 16 16 216 176)
 	(text "CU" (rect 5 0 21 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -75,11 +75,18 @@ applicable agreement for further details.
 	(port
 		(pt 200 96)
 		(output)
+		(text "halt" (rect 0 0 20 14)(font "Arial" (font_size 8)))
+		(text "halt" (rect 159 91 179 105)(font "Arial" (font_size 8)))
+		(line (pt 200 96)(pt 184 96))
+	)
+	(port
+		(pt 200 112)
+		(output)
 		(text "DBG_UPC[7..0]" (rect 0 0 84 14)(font "Arial" (font_size 8)))
-		(text "DBG_UPC[7..0]" (rect 95 91 179 105)(font "Arial" (font_size 8)))
-		(line (pt 200 96)(pt 184 96)(line_width 3))
+		(text "DBG_UPC[7..0]" (rect 95 107 179 121)(font "Arial" (font_size 8)))
+		(line (pt 200 112)(pt 184 112)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 184 112))
+		(rectangle (rect 16 16 184 144))
 	)
 )
