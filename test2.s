@@ -1,0 +1,4 @@
+MOV AX, 15
+MOV BX, 16
+STR AX, BX
+HALT

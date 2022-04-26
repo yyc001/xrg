@@ -7,33 +7,33 @@ U_INS_ACTIONS = [
         "uaddr": 0,
         "operand": 0,
         "actions": [
-            {
+            {   # 0
                 "read": "pc",
                 "write": "mar"
-            }, {
+            }, {  # 1
                 "read": "pc",
                 "write": "spa"
-            }, {
+            }, {  # 2
                 "read": "alu_l",
                 "write": "pc",
                 "alu_op": "a+1",
                 "alu_ena": "add"
-            }, {
+            }, {  # 3
                 "read": "ram",
                 "write": "ir",
                 "jmp": "if"
-            }, {
+            }, {  # 4
                 "read": "pc",
                 "write": "mar"
-            }, {
-                "read": "pc",
+            }, {  # 5
+                "read":  "pc",
                 "write": "spa"
-            }, {
+            }, {  # 6
                 "read": "alu_l",
                 "write": "pc",
                 "alu_op": "a+1",
                 "alu_ena": "add"
-            }, {
+            }, {  # 7
                 "read": "ram",
                 "write": "imm",
                 "jmp": "force"
