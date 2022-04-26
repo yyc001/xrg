@@ -15,7 +15,7 @@ def isNum(s):
         return False
 
 
-with open("test.s", encoding="utf-8") as f:
+with open("test2.s", encoding="utf-8") as f:
     line_id = 0
     bin_ad = 0
     for line in f.readlines():
