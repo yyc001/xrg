@@ -42,12 +42,11 @@ set_global_assignment -name DEVICE EP4CE6E22C8
 set_global_assignment -name TOP_LEVEL_ENTITY EXP3
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:56:09  MARCH 29, 2022"
-set_global_assignment -name LAST_QUARTUS_VERSION "21.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -94,4 +93,50 @@ set_global_assignment -name QIP_FILE multi.qip
 set_global_assignment -name QIP_FILE div.qip
 set_global_assignment -name BDF_FILE ADD16.bdf
 set_global_assignment -name BDF_FILE "REG16-TRI-IMM-BN.bdf"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_90 -to CLK
+set_location_assignment PIN_144 -to DATABUS[15]
+set_location_assignment PIN_143 -to DATABUS[14]
+set_location_assignment PIN_142 -to DATABUS[13]
+set_location_assignment PIN_141 -to DATABUS[12]
+set_location_assignment PIN_138 -to DATABUS[11]
+set_location_assignment PIN_137 -to DATABUS[10]
+set_location_assignment PIN_136 -to DATABUS[9]
+set_location_assignment PIN_135 -to DATABUS[8]
+set_location_assignment PIN_125 -to DATABUS[7]
+set_location_assignment PIN_128 -to DATABUS[6]
+set_location_assignment PIN_114 -to DATABUS[5]
+set_location_assignment PIN_120 -to DATABUS[4]
+set_location_assignment PIN_105 -to DATABUS[3]
+set_location_assignment PIN_113 -to DATABUS[2]
+set_location_assignment PIN_100 -to DATABUS[1]
+set_location_assignment PIN_101 -to DATABUS[0]
+set_location_assignment PIN_54 -to upc[7]
+set_location_assignment PIN_59 -to upc[6]
+set_location_assignment PIN_50 -to upc[5]
+set_location_assignment PIN_51 -to upc[4]
+set_location_assignment PIN_46 -to upc[3]
+set_location_assignment PIN_49 -to upc[2]
+set_location_assignment PIN_43 -to upc[1]
+set_location_assignment PIN_44 -to upc[0]
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name CDF_FILE output_files/Chain4.cdf
+set_global_assignment -name CDF_FILE output_files/Chain5.cdf
+set_location_assignment PIN_80 -to WATCH2[0]
+set_location_assignment PIN_80 -to pcb[7]
+set_location_assignment PIN_85 -to pcb[6]
+set_location_assignment PIN_73 -to pcb[5]
+set_location_assignment PIN_76 -to pcb[4]
+set_location_assignment PIN_71 -to pcb[3]
+set_location_assignment PIN_72 -to pcb[2]
+set_location_assignment PIN_68 -to pcb[1]
+set_location_assignment PIN_69 -to pcb[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -217,19 +217,19 @@ applicable agreement for further details.
 	(pt 400 264)
 )
 (connector
+	(text "L1[15..8]" (rect 578 72 621 84)(font "Arial" ))
+	(pt 648 88)
+	(pt 560 88)
+	(bus)
+)
+(connector
 	(text "L2[7..0]" (rect 575 216 612 228)(font "Arial" ))
 	(pt 648 232)
 	(pt 560 232)
 	(bus)
 )
 (connector
-	(text "L1[7..0]" (rect 578 72 615 84)(font "Arial" ))
-	(pt 648 88)
-	(pt 560 88)
-	(bus)
-)
-(connector
-	(text "L1[7..0],L2[7..0]" (rect 718 144 797 156)(font "Arial" ))
+	(text "L1[15..8],L2[7..0]" (rect 718 144 802 156)(font "Arial" ))
 	(pt 648 160)
 	(pt 776 160)
 	(bus)
