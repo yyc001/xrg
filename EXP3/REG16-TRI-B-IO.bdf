@@ -223,15 +223,21 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "L2[7..0]" (rect 575 216 612 228)(font "Arial" ))
+	(text "L1[7..0]" (rect 575 216 612 228)(font "Arial" ))
 	(pt 648 232)
 	(pt 560 232)
 	(bus)
 )
 (connector
-	(text "L1[15..8],L2[7..0]" (rect 718 144 802 156)(font "Arial" ))
+	(text "L1[15..0]" (rect 718 144 761 156)(font "Arial" ))
 	(pt 648 160)
 	(pt 776 160)
+	(bus)
+)
+(connector
+	(text "L1[15..0]" (rect 560 16 603 28)(font "Arial" ))
+	(pt 552 32)
+	(pt 720 32)
 	(bus)
 )
 (junction (pt 400 240))
