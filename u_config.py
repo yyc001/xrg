@@ -466,8 +466,8 @@ U_INS_ACTIONS = [
         "operand": 2,
         "actions": [
             {
-                "read": "r1",
-                "write": "r2",
+                "read": "r2",
+                "write": "r1",
                 "jmp": "0"
             }
         ]
