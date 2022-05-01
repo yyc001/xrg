@@ -14,13 +14,13 @@ U_INS_ACTIONS = [
                 "read": "pc",
                 "write": "spa"
             }, {  # 2
+                "read": "ram",
+                "write": "ir",
+            }, {  # 3
                 "read": "alu_l",
                 "write": "pc",
                 "alu_op": "a+1",
-                "alu_ena": "add"
-            }, {  # 3
-                "read": "ram",
-                "write": "ir",
+                "alu_ena": "add",
                 "jmp": "if"
             }, {  # 4
                 "read": "pc",
@@ -29,13 +29,13 @@ U_INS_ACTIONS = [
                 "read":  "pc",
                 "write": "spa"
             }, {  # 6
+                "read": "ram",
+                "write": "imm",
+            }, {  # 7
                 "read": "alu_l",
                 "write": "pc",
                 "alu_op": "a+1",
-                "alu_ena": "add"
-            }, {  # 7
-                "read": "ram",
-                "write": "imm",
+                "alu_ena": "add",
                 "jmp": "force"
             },
         ]

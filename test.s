@@ -1,6 +1,6 @@
 MOV AX, 15
 MOV BX, 3
-LD CX, .esp
+MOV CX, .esp
 
 ADD DX, AX, BX
 STR DX, CX
