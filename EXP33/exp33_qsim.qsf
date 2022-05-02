@@ -106,5 +106,6 @@ set_global_assignment -name VERILOG_FILE multi.v
 set_global_assignment -name VERILOG_FILE div.v
 set_global_assignment -name VERILOG_FILE CM0.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VECTOR_OUTPUT_FORMAT VWF
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "E:/workHard/xrg/EXP33/Waveform.vwf"

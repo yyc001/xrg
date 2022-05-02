@@ -310,7 +310,7 @@ U_INS_ACTIONS = [
             }
         ]
     }, {
-        "name": "JZ",
+        "name": "JNZ",
         "operand": 2,
         "actions": [
             {
@@ -331,7 +331,7 @@ U_INS_ACTIONS = [
             }
         ]
     }, {
-        "name": "JZR",
+        "name": "JNZR",
         "operand": 2,
         "actions": [
             {

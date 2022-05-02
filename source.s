@@ -12,8 +12,8 @@
   ADD AX, AX, 1
   LD  DX, AX
   ADD CX, CX, DX
-  NXOR DX, AX, BX
-  JZ  DX, .loop
+  XOR DX, AX, BX
+  JNZ  DX, .loop
   STR .ad2, CX
   HALT
 .ad1

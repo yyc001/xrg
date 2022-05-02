@@ -133,6 +133,22 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 2384 896 2560 912)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "dbg6" (rect 90 0 113 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 712 520 856 808)
 	(text "FINDER" (rect 5 0 48 13)(font "Intel Clear" (font_size 8)))
@@ -2405,11 +2421,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1248 -112)
-	(pt 1248 -208)
-	(bus)
-)
-(connector
 	(pt 1032 -160)
 	(pt 1040 -160)
 )
@@ -2895,13 +2906,18 @@ applicable agreement for further details.
 )
 (connector
 	(text "<<__$DEF_ALIAS445>>" (rect 1279 -408 1397 -396)(font "Arial" )(invisible))
-	(pt 1232 -392)
+	(pt 1248 -392)
 	(pt 1328 -392)
 	(bus)
 )
 (connector
-	(pt 1232 -392)
-	(pt 1232 -176)
+	(pt 1248 -392)
+	(pt 1248 -208)
+	(bus)
+)
+(connector
+	(pt 1248 -208)
+	(pt 1248 -112)
 	(bus)
 )
 (junction (pt 608 552))
