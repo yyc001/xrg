@@ -58,7 +58,7 @@ with open("source.s", encoding="utf-8") as f:
         })
         bin_ad += 1 + imme
 
-with open("source.mif", "w") as f:
+with open("EXP33/RAM0.mif", "w") as f:
     f.write("""WIDTH=16;
 DEPTH=256;
 

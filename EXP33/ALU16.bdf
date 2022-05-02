@@ -551,31 +551,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 576 584 624 616)
-	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
-	(text "inst11" (rect 3 21 31 32)(font "Intel Clear" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 13 16))
-	)
-	(port
-		(pt 48 16)
-		(output)
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(line (pt 39 16)(pt 48 16))
-	)
-	(drawing
-		(line (pt 13 25)(pt 13 7))
-		(line (pt 13 7)(pt 31 16))
-		(line (pt 13 25)(pt 31 16))
-		(circle (rect 31 12 39 20))
-	)
-)
-(symbol
 	(rect 856 504 920 552)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst10" (rect 3 37 31 48)(font "Intel Clear" ))
@@ -1365,6 +1340,31 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
+(symbol
+	(rect 576 552 624 584)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst11" (rect 3 21 32 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(pt -8 -392)
 	(pt 48 -392)
@@ -1437,14 +1437,6 @@ applicable agreement for further details.
 	(pt 648 600)
 )
 (connector
-	(pt 648 600)
-	(pt 624 600)
-)
-(connector
-	(pt 560 568)
-	(pt 664 568)
-)
-(connector
 	(pt 808 536)
 	(pt 856 536)
 	(bus)
@@ -1508,14 +1500,6 @@ applicable agreement for further details.
 (connector
 	(pt 104 -304)
 	(pt 104 -272)
-)
-(connector
-	(pt 512 600)
-	(pt 560 600)
-)
-(connector
-	(pt 560 600)
-	(pt 576 600)
 )
 (connector
 	(pt -24 -232)
@@ -1915,12 +1899,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "seb[15..0]" (rect 980 512 1028 523)(font "Intel Clear" ))
-	(pt 1112 528)
-	(pt 920 528)
-	(bus)
-)
-(connector
 	(pt 192 80)
 	(pt 192 128)
 	(bus)
@@ -2132,6 +2110,28 @@ applicable agreement for further details.
 (connector
 	(pt 96 -336)
 	(pt 120 -336)
+)
+(connector
+	(pt 560 568)
+	(pt 576 568)
+)
+(connector
+	(pt 624 568)
+	(pt 664 568)
+)
+(connector
+	(pt 512 600)
+	(pt 560 600)
+)
+(connector
+	(pt 560 600)
+	(pt 648 600)
+)
+(connector
+	(text "<<__$DEF_ALIAS458>>" (rect 980 512 1110 523)(font "Intel Clear" )(invisible))
+	(pt 1112 528)
+	(pt 920 528)
+	(bus)
 )
 (junction (pt 48 -384))
 (junction (pt 48 -368))
