@@ -44,10 +44,10 @@ U_INS_ACTIONS = [
         "operand": 3,
         "actions": [
             {
-                "read": "r2",
+                "read": "r1",
                 "write": "spa"
             }, {
-                "read": "r3",
+                "read": "r2",
                 "write": "spb"
             }, {
                 "read": "alu_l",
@@ -74,10 +74,10 @@ U_INS_ACTIONS = [
         "operand": 3,
         "actions": [
             {
-                "read": "r2",
+                "read": "r1",
                 "write": "spa"
             }, {
-                "read": "r3",
+                "read": "r2",
                 "write": "spb"
             }, {
                 "read": "alu_l",
@@ -104,7 +104,7 @@ U_INS_ACTIONS = [
         "operand": 3,
         "actions": [
             {
-                "read": "r3",
+                "read": "r1",
                 "write": "spb"
             }, {
                 "read": "r2",
