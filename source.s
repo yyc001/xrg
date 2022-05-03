@@ -14,7 +14,7 @@
   ADD CX, CX, DX
   XOR DX, AX, BX
   JNZ  DX, .loop
-  STR .ad2, CX
+  STR  CX, .ad2
   HALT
 .ad1
 3
