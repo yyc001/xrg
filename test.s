@@ -54,8 +54,4 @@ JNZR 1, AX
 
 JMPR -2
 0
-0
-0
-0
-0
 .esp

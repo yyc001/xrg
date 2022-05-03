@@ -15,7 +15,7 @@ def isNum(s):
         return False
 
 
-with open("source.s", encoding="utf-8") as f:
+with open("test2.s", encoding="utf-8") as f:
     line_id = 0
     bin_ad = 0
     for line in f.readlines():
@@ -58,7 +58,7 @@ with open("source.s", encoding="utf-8") as f:
         })
         bin_ad += 1 + imme
 
-with open("EXP33/RAM0.mif", "w") as f:
+with open("test2.mif", "w") as f:
     f.write("""WIDTH=16;
 DEPTH=256;
 

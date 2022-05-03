@@ -32,7 +32,7 @@ for instruction in U_INS_ACTIONS:
         output_arr[naddr] = tmp
         naddr += 1
 
-with open("EXP33/CM0.mif", "w") as f:
+with open("CM0.mif", "w") as f:
     f.write("""WIDTH=24;
 DEPTH=256;
 
