@@ -452,7 +452,6 @@ U_INS_ACTIONS = [
                 "write": "spc",
                 "alu_op": "a/b",
                 "alu_ena": "div",
-                "jmp": "0"
             }, {
                 "read": "alu_l",
                 "write": "r1",

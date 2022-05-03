@@ -50,7 +50,7 @@ ADD CX, CX, 1
 STR spc, CX
 ADD CX, CX, 1
 
-JNZR 1, AX
+JNZR 0, AX
 
 JMPR -2
 0
