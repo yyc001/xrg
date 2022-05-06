@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue May 03 17:57:08 2022
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : exp33
+Top-level Entity Name : EXP33
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 1,113 / 6,272 ( 18 % )
+    Total combinational functions : 1,054 / 6,272 ( 17 % )
+    Dedicated logic registers : 301 / 6,272 ( 5 % )
+Total registers : 301
+Total pins : 67 / 92 ( 73 % )
+Total virtual pins : 0
+Total memory bits : 9,216 / 276,480 ( 3 % )
+Embedded Multiplier 9-bit elements : 2 / 30 ( 7 % )
+Total PLLs : 0 / 2 ( 0 % )

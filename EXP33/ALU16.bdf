@@ -1455,18 +1455,8 @@ applicable agreement for further details.
 	(pt 560 600)
 )
 (connector
-	(pt -64 568)
-	(pt -64 600)
-	(bus)
-)
-(connector
 	(pt -72 568)
 	(pt -64 568)
-	(bus)
-)
-(connector
-	(pt -64 600)
-	(pt 376 600)
 	(bus)
 )
 (connector
@@ -1567,16 +1557,6 @@ applicable agreement for further details.
 	(pt 224 24)
 	(pt 400 24)
 	(bus)
-)
-(connector
-	(text "OP0" (rect 262 -40 284 -29)(font "Intel Clear" ))
-	(pt 192 -24)
-	(pt 400 -24)
-)
-(connector
-	(text "OP1" (rect 269 -8 291 3)(font "Intel Clear" ))
-	(pt 192 8)
-	(pt 400 8)
 )
 (connector
 	(pt 208 -216)
@@ -2120,6 +2100,22 @@ applicable agreement for further details.
 	(pt 664 568)
 )
 (connector
+	(text "<<__$DEF_ALIAS458>>" (rect 980 512 1110 523)(font "Intel Clear" )(invisible))
+	(pt 1112 528)
+	(pt 920 528)
+	(bus)
+)
+(connector
+	(pt -64 568)
+	(pt -64 600)
+	(bus)
+)
+(connector
+	(pt -64 600)
+	(pt 376 600)
+	(bus)
+)
+(connector
 	(pt 512 600)
 	(pt 560 600)
 )
@@ -2128,10 +2124,14 @@ applicable agreement for further details.
 	(pt 648 600)
 )
 (connector
-	(text "<<__$DEF_ALIAS458>>" (rect 980 512 1110 523)(font "Intel Clear" )(invisible))
-	(pt 1112 528)
-	(pt 920 528)
-	(bus)
+	(text "OP1" (rect 262 -40 284 -29)(font "Intel Clear" ))
+	(pt 192 -24)
+	(pt 400 -24)
+)
+(connector
+	(text "OP0" (rect 269 -8 291 3)(font "Intel Clear" ))
+	(pt 192 8)
+	(pt 400 8)
 )
 (junction (pt 48 -384))
 (junction (pt 48 -368))
