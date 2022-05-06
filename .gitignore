@@ -5,3 +5,4 @@
 */simulation/
 .idea
 test/*
+__pycache__/
