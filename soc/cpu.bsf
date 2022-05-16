@@ -1,0 +1,134 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 232 272)
+	(text "cpu" (rect 5 0 26 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 240 25 252)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 15 14)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 27 36 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ram_q[15..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "ram_q[15..0]" (rect 21 43 91 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "reset" (rect 21 59 50 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "ram_in[15..0]" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "ram_in[15..0]" (rect 122 27 195 41)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(port
+		(pt 216 48)
+		(output)
+		(text "ram_wren" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "ram_wren" (rect 136 43 195 57)(font "Arial" (font_size 8)))
+		(line (pt 216 48)(pt 200 48))
+	)
+	(port
+		(pt 216 64)
+		(output)
+		(text "ram_addr[15..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
+		(text "ram_addr[15..0]" (rect 106 59 195 73)(font "Arial" (font_size 8)))
+		(line (pt 216 64)(pt 200 64)(line_width 3))
+	)
+	(port
+		(pt 216 80)
+		(output)
+		(text "STOP" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "STOP" (rect 164 75 195 89)(font "Arial" (font_size 8)))
+		(line (pt 216 80)(pt 200 80))
+	)
+	(port
+		(pt 216 96)
+		(output)
+		(text "dbg1[15..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "dbg1[15..0]" (rect 132 91 195 105)(font "Arial" (font_size 8)))
+		(line (pt 216 96)(pt 200 96)(line_width 3))
+	)
+	(port
+		(pt 216 112)
+		(output)
+		(text "dbg2[15..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "dbg2[15..0]" (rect 132 107 195 121)(font "Arial" (font_size 8)))
+		(line (pt 216 112)(pt 200 112)(line_width 3))
+	)
+	(port
+		(pt 216 128)
+		(output)
+		(text "dbg3[15..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "dbg3[15..0]" (rect 132 123 195 137)(font "Arial" (font_size 8)))
+		(line (pt 216 128)(pt 200 128)(line_width 3))
+	)
+	(port
+		(pt 216 144)
+		(output)
+		(text "dbg4[15..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "dbg4[15..0]" (rect 132 139 195 153)(font "Arial" (font_size 8)))
+		(line (pt 216 144)(pt 200 144)(line_width 3))
+	)
+	(port
+		(pt 216 160)
+		(output)
+		(text "dbg5[15..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "dbg5[15..0]" (rect 132 155 195 169)(font "Arial" (font_size 8)))
+		(line (pt 216 160)(pt 200 160)(line_width 3))
+	)
+	(port
+		(pt 216 176)
+		(output)
+		(text "dbg6[15..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "dbg6[15..0]" (rect 132 171 195 185)(font "Arial" (font_size 8)))
+		(line (pt 216 176)(pt 200 176)(line_width 3))
+	)
+	(port
+		(pt 216 192)
+		(output)
+		(text "dbg7[15..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "dbg7[15..0]" (rect 132 187 195 201)(font "Arial" (font_size 8)))
+		(line (pt 216 192)(pt 200 192)(line_width 3))
+	)
+	(port
+		(pt 216 208)
+		(output)
+		(text "dbg8[15..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "dbg8[15..0]" (rect 132 203 195 217)(font "Arial" (font_size 8)))
+		(line (pt 216 208)(pt 200 208)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 240))
+	)
+)

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for exp33
-Tue May 03 17:57:16 2022
+Tue May 10 06:03:12 2022
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue May 03 17:57:16 2022 ;
+; EDA Netlist Writer Status ; Successful - Tue May 10 06:03:12 2022 ;
 ; Revision Name             ; exp33                                 ;
 ; Top-level Entity Name     ; EXP33                                 ;
 ; Family                    ; Cyclone IV E                          ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Tue May 03 17:57:15 2022
+    Info: Processing started: Tue May 10 06:03:12 2022
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off exp33 -c exp33
 Info (204019): Generated file exp33.vo in folder "D:/xrg/EXP33/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 422 megabytes
-    Info: Processing ended: Tue May 03 17:57:16 2022
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 430 megabytes
+    Info: Processing ended: Tue May 10 06:03:12 2022
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
